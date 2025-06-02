@@ -5,7 +5,11 @@ export default {
             Discussions
         </div>
         <div class="w-[93%]">
-            <input type="text" placeholder="Rechercher" class="w-full mx-5 rounded-[15px] h-[30px] p-3 text-black"/>
+            <input type="text" 
+                   id="contact-search" 
+                   placeholder="Rechercher (* pour tout afficher)" 
+                   class="w-full mx-5 rounded-[15px] h-[30px] p-3 text-black"
+                   onkeyup="filterContacts(this.value)"/>
         </div>
         <div id="add-contact-form" class="hidden p-5">
             <form id="contact-form">

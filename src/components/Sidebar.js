@@ -1,3 +1,5 @@
+import authService from '../services/auth.js';
+
 export default {
   template: `
     <div class="bg-[#f0efe8] w-[7%] h-full rounded-tl-2xl rounded-bl-2xl flex justify-center items-center flex-col gap-5">
@@ -21,6 +23,17 @@ export default {
             <img src="images/aj.svg" class="h-8"/>
             <div>Nouveau</div>
         </div>
+        <div class="flex flex-col border-[2px] border-solid border-[red] h-[100px] w-[100px] justify-center items-center rounded-xl cursor-pointer" id="logout-button" onclick="handleLogout()">
+            <img src="images/logout.svg" class="h-8"/>
+            <div>Déconnexion</div>
+        </div>
     </div>
   `
+};
+
+// Ajouter cette fonction au niveau global
+window.handleLogout = function() {
+  if (confirm('Voulez-vous vraiment vous déconnecter ?')) {
+      authService.logout();
+  }
 };
