@@ -15,10 +15,10 @@ export default {
                     <img src="./images/ar2.svg" class="h-[15px] w-[15px]"/>
                 </div>
                 <div class="rounded-full border-[black] border-solid border-[2px] h-[30px] w-[30px] flex justify-center items-center">
-                    <img src="./images/cr.svg" class="h-[15px] w-[15px]"/>
+                    <img src="../images/cr.svg" class="h-[15px] w-[15px]"/>
                 </div>
                 <div class="rounded-full border-[red] border-solid border-[2px] h-[30px] w-[30px] flex justify-center items-center">
-                    <img src="./images/tr.svg" class="h-[15px] w-[15px]"/>
+                    <img src="../images/tr.svg" class="h-[15px] w-[15px]"/>
                 </div>
             </div>
         </div>
